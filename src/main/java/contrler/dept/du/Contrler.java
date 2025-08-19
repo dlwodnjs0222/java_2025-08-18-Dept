@@ -51,7 +51,6 @@ public class Contrler extends HttpServlet {
 			}else if(isUpdate.equals("yes")){
 				dao.update(dept);
 			}
-			dao.insert(dept);
 			view = "redirect:dept";
 			
 		} else if (com.equals("/updateForm")) {

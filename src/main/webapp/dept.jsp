@@ -11,6 +11,7 @@
 				border: 1px solid #ccc;
 				border-collapse: collapse;
 			}
+			
 			tr, td {padding: 10px 20px;}
 		</style>
 	</head>
@@ -22,10 +23,11 @@
 					<td>deptno: <input type="text" name="deptno" value="${dto.deptno }"></td>
 					<td>dnaem: <input type="text" name="dname" value="${dto.dname }"></td>
 					<td>loc: <input type="text" name="loc" value="${dto.loc }"></td>
-					<td>입력/수정: <input type="submit" value="수정"></td>
+					<td>입력/수정: <input type="submit"></td>
 				</tr>
 			</table>
 		</form>
+		<br>
 		<table>
 			<c:forEach var="dto" items="${list }">
 				<tr>
